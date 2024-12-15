@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.Greeting {
+    position: relative;
+    font-family: "Vibur", sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    z-index: 10;
+    line-height: 2;
+}
+
+.Box {
+    position: absolute;
+    height: 63%;
+    width: 33%;
+    top: 15%;
+    left: 33%;
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+    z-index: -1;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 10px purple;
+}
+
+#fgImage {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 27%;
+    left: 35%;
+    box-shadow: 0 0 50px 9px purple;
+}
+
+#Name {
+    text-indent: 53%;
+    color: #fff;
+    top: 50%;
+    bottom: 50%;
+    width:100%;
+    animation: pulsate 0.11s ease-in-out infinite alternate;
+    line-height: 3.7;
+}
+
+#Name2 {
+    position: absolute;
+    text-indent: 51%;
+    color: #fff;
+    top: 50%;
+    bottom: 50%;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.Socials {
+    position: absolute;
+    height: 5%;
+    width: 25%;
+    top: 90%;
+    left: 37%;
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+    z-index: 1;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.imgSocials {
+    top: 1px;
+    position:absolute;
+}
+
+.Embed {
+    z-index: 1;
+    position: absolute;
+    left: 36%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 50px 10px rgb(30, 0, 128);
+}
+
+.Buttons {
+    z-index: 1;
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+    height: 50px;
+    width: 50px;
+}
+
+#MeowImage {
+    right: 125%;
+}
+
+@keyframes pulsate {
+    100% {
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #f09,
+            0 0 80px #f09,
+            0 0 90px #f09,
+            0 0 100px #f09,
+            0 0 150px #f09;
+    }
+    0% {
+        text-shadow:
+            0 0 4px #fff,
+            0 0 10px #fff,
+            0 0 18px #fff,
+            0 0 38px #f09,
+            0 0 73px #f09,
+            0 0 80px #f09,
+            0 0 94px #f09,
+            0 0 140px #f09;
+    }
+}
