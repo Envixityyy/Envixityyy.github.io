@@ -1,20 +1,20 @@
 let isPlaying = true
 
 window.onload = function() { // Functions for after page load
-    const bgAudio = document.getElementById("bgMusic");
-    const autoplayIcon = document.getElementById("ButtonImage");
-    let promise = bgAudio.play();
+    const bgmAudio = document.getElementById("bgMusic");
+    const bgmIcon = document.getElementById("ButtonImage");
+    let autoplay = bgmAudio.play();
 
-    bgAudio.volume = 0.1; // Set background volume down
+    bgmAudio.volume = 0.1; // Set background volume down
 
     // New function goes down here!!! //
 
-    if (promise !== undefined) { // Autoplay thingy
-        promise.then(_ => {
+    if (autoplay !== undefined) { // Autoplay thingy
+        autoplay.then(_ => {
             // Autoplay works
         }).catch(error => {
-            bgAudio.pause();
-            autoplayIcon.src = "Useful Files/volume-down.png"
+            bgmAudio.pause();
+            bgmIcon.src = "Useful Files/volume-down.png"
             isPlaying = false;
         });
     }
@@ -31,14 +31,14 @@ function changeImage() { // Change volume image on button click
 }
 
 function playPause() { // Make audio button work
-    const bgAudio = document.getElementById("bgMusic");
+    const bgmAudio = document.getElementById("bgMusic");
 
     if (isPlaying == true) {
-        bgAudio.pause();
+        bgmAudio.pause();
         isPlaying = false;
     }
     else {
-        bgAudio.play();
+        bgmAudio.play();
         isPlaying = true;
     }
 }
