@@ -21,84 +21,91 @@ img {
 
 .Greeting {
     position: relative;
-    font-family: "Vibur", sans-serif;
-    font-size: 2.3rem;
-    font-weight: bold;
-    z-index: 10;
-    line-height: 2;
-}
+    display: flex;
+    width: min-content;
+    padding: 1vh 3vw;
 
-.Box {
-    position: absolute;
-    height: 63%;
-    width: 33%;
-    top: 15%;
-    left: 33%;
-    border: 2px solid;
-    padding: 10px;
-    margin: 10px;
-    z-index: -1;
+    margin: auto;
+    margin-top: 5vh;
+    justify-content: center;
+
+    font-family: "Vibur", sans-serif;
+    align-items: center;
+    font-weight: bold;
+
+    z-index: 10;
+
     border-radius: 15px;
     -moz-border-radius: 15px;
+
+    border: 2px solid;
     backdrop-filter: blur(10px);
     box-shadow: 10px 10px 10px purple;
 }
 
+#hi {
+    width: 14rem;
+    text-align: center;
+}
+
 #fgImage {
     border-radius: 50%;
-    width: 150px;
-    height: auto;
-    position: absolute;
-    top: 27%;
-    left: 35%;
+    height: 10rem;
     box-shadow: 0 0 50px 9px purple;
 }
 
 #Name {
-    text-indent: 53%;
     color: #fff;
-    top: 50%;
-    bottom: 50%;
-    width:100%;
+    font-size: 4.3rem;
     animation: pulsate 0.11s ease-in-out infinite alternate;
-    line-height: 3.7;
+    margin-top: 1rem;
+    margin-bottom: -3.5rem;
 }
 
 #Name2 {
-    position: absolute;
-    text-indent: 51%;
-    color: #fff;
-    top: 50%;
-    bottom: 50%;
-    width: 100%;
     font-size: 2rem;
+    color: #fff;
 }
 
 .Socials {
-    position: absolute;
-    height: 5%;
-    width: 25%;
-    top: 90%;
-    left: 37%;
-    border: 2px solid;
-    padding: 10px;
-    margin: 10px;
-    z-index: 1;
+    position: relative;
+    display: flex;
+    width: min-content;
+    padding: 1vh 3vw;
+
+    margin: auto;
+    margin-top: 60vh;
+    justify-content: center;
+
+    font-family: "Vibur", sans-serif;
+    align-items: center;
+    font-weight: bold;
+
+    z-index: 10;
+
     border-radius: 15px;
     -moz-border-radius: 15px;
+
+    border: 2px solid;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 50px 9px purple;
 }
 
 .imgSocials {
-    top: 1px;
-    position:absolute;
+    width: 3rem;
+    padding: 0.2vh 0.5vw;
 }
 
 .Embed {
     z-index: 1;
     position: absolute;
-    left: 36%;
+    display: flex;
+
+    margin-top: 10vh;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 0 50px 10px rgb(30, 0, 128);
